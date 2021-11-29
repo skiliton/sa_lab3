@@ -6,36 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>699</width>
-    <height>733</height>
+    <width>1043</width>
+    <height>800</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Form1</string>
+   <string>System analysis 3</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(170, 85, 255);</string>
+   <string notr="true">background-color: rgb(173, 217, 250);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
-   <item row="0" column="4">
+   <item row="9" column="4">
     <widget class="QGroupBox" name="groupBox_5">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
-      <locale language="Ukrainian" country="Ukraine"/>
+      <locale language="English" country="UnitedStates"/>
      </property>
      <property name="title">
-      <string>Степень полинома</string>
+      <string>Polynomial degree</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QGroupBox" name="groupBox_4">
         <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
+         <locale language="English" country="UnitedStates"/>
         </property>
         <property name="title">
-         <string>Степень</string>
+         <string>Degree</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_4">
          <item row="0" column="0">
@@ -122,33 +127,105 @@
      </layout>
     </widget>
    </item>
-   <item row="7" column="0" rowspan="2" colspan="6">
-    <widget class="QTextBrowser" name="results_field">
+   <item row="7" column="3" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
       <locale language="Ukrainian" country="Ukraine"/>
      </property>
-     <property name="lineWrapMode">
-      <enum>QTextEdit::NoWrap</enum>
+     <property name="title">
+      <string>Data</string>
      </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-     <property name="html">
-      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.Menio Regular'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="placeholderText" stdset="0">
-      <string>Результати</string>
-     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="text">
+         <string>Size</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QToolButton" name="select_output">
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="sample_spin">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="maximum">
+         <number>999</number>
+        </property>
+        <property name="value">
+         <number>45</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="select_input">
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="line_output">
+        <property name="font">
+         <font>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="placeholderText">
+         <string>Output file</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="line_input">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Input file</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
-   <item row="0" column="3">
+   <item row="8" column="3">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
@@ -157,17 +234,17 @@ p, li { white-space: pre-wrap; }
       </sizepolicy>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
-      <locale language="Ukrainian" country="Ukraine"/>
+      <locale language="English" country="UnitedStates"/>
      </property>
      <property name="title">
-      <string>Размер</string>
+      <string>Size</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
-      <item row="1" column="1">
-       <widget class="QSpinBox" name="x1_dim">
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="x2_dim">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
@@ -192,8 +269,8 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
-       <widget class="QSpinBox" name="x2_dim">
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="x1_dim">
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
@@ -273,25 +350,72 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="3" column="3">
-    <widget class="QGroupBox" name="groupBox_7">
+   <item row="9" column="3">
+    <widget class="QGroupBox" name="groupBox_6">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
-      <locale language="Ukrainian" country="Ukraine"/>
+      <locale language="English" country="UnitedStates"/>
      </property>
      <property name="title">
-      <string>Весы</string>
+      <string>Control panel</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="plot_button">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(155, 194, 224);</string>
+        </property>
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="text">
+         <string>Plot</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exec_button">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(155, 194, 224);</string>
+        </property>
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
+        <property name="text">
+         <string>Solve</string>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
+     </property>
+     <property name="locale">
+      <locale language="English" country="UnitedStates"/>
+     </property>
+     <property name="title">
+      <string>Weights</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
        <widget class="QLabel" name="label_9">
         <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
+         <locale language="English" country="UnitedStates"/>
         </property>
         <property name="text">
-         <string>Вес:</string>
+         <string>Weight:</string>
         </property>
        </widget>
       </item>
@@ -303,7 +427,7 @@ p, li { white-space: pre-wrap; }
         <property name="locale">
          <locale language="Ukrainian" country="Ukraine"/>
         </property>
-        <property name="currentText" stdset="0">
+        <property name="currentText">
          <string>Average</string>
         </property>
         <item>
@@ -321,162 +445,55 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </item>
-   <item row="3" column="2">
-    <widget class="QGroupBox" name="groupBox">
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
+   <item row="5" column="3" colspan="2">
+    <widget class="QCheckBox" name="lambda_check">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
       <locale language="Ukrainian" country="Ukraine"/>
      </property>
-     <property name="title">
-      <string>Данные</string>
+     <property name="text">
+      <string>Use 3-block lambda</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout_5">
-      <item row="2" column="1">
-       <widget class="QToolButton" name="select_output">
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string>...</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QSpinBox" name="sample_spin">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="maximum">
-         <number>999</number>
-        </property>
-        <property name="value">
-         <number>45</number>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QToolButton" name="select_input">
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string>...</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLineEdit" name="line_input">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="placeholderText">
-         <string>Input file</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string>Размер</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLineEdit" name="line_output">
-        <property name="font">
-         <font>
-          <italic>true</italic>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="placeholderText">
-         <string>Output file</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </widget>
    </item>
-   <item row="3" column="4">
-    <widget class="QGroupBox" name="groupBox_6">
+   <item row="5" column="0" rowspan="5">
+    <widget class="QTextBrowser" name="results_field">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(255, 255, 255); color: black;</string>
      </property>
      <property name="locale">
       <locale language="Ukrainian" country="Ukraine"/>
      </property>
-     <property name="title">
-      <string>Запустить / График</string>
+     <property name="lineWrapMode">
+      <enum>QTextEdit::NoWrap</enum>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="plot_button">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(170, 85, 255);
-</string>
-        </property>
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string>Графіки</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="exec_button">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(170, 85, 255);</string>
-        </property>
-        <property name="locale">
-         <locale language="Ukrainian" country="Ukraine"/>
-        </property>
-        <property name="text">
-         <string>Ок</string>
-        </property>
-        <property name="default">
-         <bool>true</bool>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.Menio Regular'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="placeholderText">
+      <string>Results</string>
+     </property>
     </widget>
    </item>
-   <item row="0" column="2">
+   <item row="6" column="3" colspan="2">
     <widget class="QGroupBox" name="groupBox_3">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
+      <string notr="true">background-color: rgb(173, 217, 250); color: black;</string>
      </property>
      <property name="locale">
-      <locale language="Ukrainian" country="Ukraine"/>
+      <locale language="English" country="UnitedStates"/>
      </property>
      <property name="title">
-      <string>Тип полиномов</string>
+      <string>Polynomial type</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
@@ -507,6 +524,12 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QRadioButton" name="radio_sh_cheb_u">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="locale">
+         <locale language="Ukrainian" country="Ukraine"/>
+        </property>
         <property name="text">
          <string>Чебышев II смещенный</string>
         </property>
@@ -514,25 +537,15 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="custom_check">
+        <property name="locale">
+         <locale language="English" country="UnitedStates"/>
+        </property>
         <property name="text">
-         <string>Собственный тип</string>
+         <string>Custom</string>
         </property>
        </widget>
       </item>
      </layout>
-    </widget>
-   </item>
-   <item row="1" column="3">
-    <widget class="QCheckBox" name="lambda_check">
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(170, 170, 255);</string>
-     </property>
-     <property name="locale">
-      <locale language="Ukrainian" country="Ukraine"/>
-     </property>
-     <property name="text">
-      <string>Использовать 3х-блочный лямбда</string>
-     </property>
     </widget>
    </item>
   </layout>
@@ -551,7 +564,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>line_output</tabstop>
   <tabstop>select_output</tabstop>
   <tabstop>exec_button</tabstop>
-  <tabstop>results_field</tabstop>
  </tabstops>
  <resources/>
  <connections>
@@ -580,54 +592,6 @@ p, li { white-space: pre-wrap; }
     <hint type="sourcelabel">
      <x>526</x>
      <y>219</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>309</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sample_spin</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>Form</receiver>
-   <slot>samples_modified(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>568</x>
-     <y>53</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>309</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>select_input</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>input_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>557</x>
-     <y>95</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>309</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>select_output</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>output_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>557</x>
-     <y>136</y>
     </hint>
     <hint type="destinationlabel">
      <x>309</x>
@@ -764,6 +728,102 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
+   <sender>lambda_check</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>lambda_calc_method_changed(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>weights_box</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>weights_modified(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>y_dim</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>dimension_modified(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sample_spin</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>samples_modified(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select_input</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>input_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>557</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select_output</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>output_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>557</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>Form</sender>
    <signal>output_changed(QString)</signal>
    <receiver>line_output</receiver>
@@ -824,54 +884,6 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>309</x>
      <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>lambda_check</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>Form</receiver>
-   <slot>lambda_calc_method_changed(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>301</x>
-     <y>219</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>309</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>weights_box</sender>
-   <signal>currentIndexChanged(QString)</signal>
-   <receiver>Form</receiver>
-   <slot>weights_modified(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>136</x>
-     <y>220</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>309</x>
-     <y>199</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>y_dim</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>Form</receiver>
-   <slot>dimension_modified(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>378</x>
-     <y>146</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>311</x>
-     <y>299</y>
     </hint>
    </hints>
   </connection>
