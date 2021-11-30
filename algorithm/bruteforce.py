@@ -4,9 +4,9 @@ from PyQt5.QtCore import pyqtSlot, pyqtSignal
 from PyQt5.QtWidgets import QDialog, QMessageBox
 from PyQt5.uic import loadUiType
 
-from calculate_optimal_degrees import *
-from solve_custom import SolveExpTh
-from solve import Solve
+from .calculate_optimal_degrees import *
+from .solve_custom import SolveExpTh
+from .solve import Solve
 
 form_class, base_class = loadUiType('bruteforce_window.ui')
 

@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from numpy.polynomial import Polynomial as pnm
 from os import name as os_name
 
-from solve import Solve
-import basis_generator as b_gen
+from .solve import Solve
+from .basis_generator import *
 
 __author__ = 'vlad'
 
@@ -16,16 +16,16 @@ class PolynomialBuilder(object):
         max_degree = max(solution.deg) - 1
         if solution.poly_type == 'cheb_t':
             self.symbol = 'T'
-            self.basis = b_gen.basis_chebyshev(max_degree)
+            self.basis = basis_chebyshev(max_degree)
         elif solution.poly_type == 'sh_cheb_t':
             self.symbol = 'T*'
-            self.basis = b_gen.basis_sh_chebyshev(max_degree)
+            self.basis = basis_sh_chebyshev(max_degree)
         elif solution.poly_type == 'cheb_u':
             self.symbol = 'U'
-            self.basis = b_gen.basis_sh_chebyshev_2(max_degree)
+            self.basis = basis_sh_chebyshev_2(max_degree)
         elif solution.poly_type == 'sh_cheb_u':
             self.symbol = 'U*'
-            self.basis = b_gen.basis_sh_chebyshev_2(max_degree)
+            self.basis = basis_sh_chebyshev_2(max_degree)
         assert self.symbol
         self.a = solution.a.T.tolist()
         self.c = solution.c.T.tolist()

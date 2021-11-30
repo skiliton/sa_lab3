@@ -8,10 +8,10 @@ from PyQt5.QtGui import QTextDocument, QFont
 from PyQt5.QtWidgets import QApplication, QDialog, QFileDialog, QMessageBox
 from PyQt5.uic import loadUiType
 
-from presentation import PolynomialBuilder, PolynomialBuilderExpTh
-from solve import Solve
-from solve_custom import SolveExpTh
-from bruteforce import BruteForceWindow
+from algorithm.presentation import PolynomialBuilder, PolynomialBuilderExpTh
+from algorithm.solve import Solve
+from algorithm.solve_custom import SolveExpTh
+from algorithm.bruteforce import BruteForceWindow
 
 app = QApplication(sys.argv)
 app.setApplicationName('lab3_sa')
